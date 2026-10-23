@@ -1,79 +1,569 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="dark scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michael Ryan - Trang chủ</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>Michael Ryan - Góc Nhỏ Chia Sẻ & Tra Cứu Trực Tiếp XSMN Thứ 4</title>
+    <meta name="description" content="Góc nhỏ cá nhân của Michael Ryan - Chia sẻ trải nghiệm xem trực tiếp kết quả xổ số miền Nam (XSMN T4) lúc 16h10 chiều Thứ 4 hàng tuần mượt mà, chuẩn xác tại Xổ số Đại Phát.">
+    <meta name="keywords" content="Michael Ryan, xsmn, xsmn t4, kết quả xổ số miền nam thứ 4, xổ số Đại Phát, trực tiếp xsmn 16h10">
+    <meta name="author" content="Michael Ryan">
+    <link rel="canonical" href="https://michaelryan03.github.io/">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://michaelryan03.github.io/">
+    <meta property="og:title" content="Michael Ryan - Góc Nhỏ Chia Sẻ & Tra Cứu XSMN">
+    <meta property="og:description" content="Cùng Michael Ryan hóng kết quả xổ số miền Nam (XSMN) chiều Thứ 4 lúc 16h10 siêu tốc, cập nhật theo thời gian thực tại Xổ số Đại Phát.">
+    <meta property="og:image" content="https://sf-static.upanhlaylink.com/img/image_20260819b5c94bd646031bba3f06aca54abbdea4.jpg">
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://michaelryan03.github.io/"
+      },
+      "headline": "Michael Ryan - Trải nghiệm xem trực tiếp XSMN Thứ 4 siêu tốc",
+      "image": "https://sf-static.upanhlaylink.com/img/image_20260819b5c94bd646031bba3f06aca54abbdea4.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Michael Ryan",
+        "url": "https://michaelryan03.github.io/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Michael Ryan"
+      },
+      "description": "Chia sẻ thói quen đón xem trực tiếp kết quả xổ số miền Nam khung giờ 16h10 chiều Thứ 4 hàng tuần trên Xổ số Đại Phát."
+    }
+    </script>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0f172a',
+                            900: '#0a1120',
+                            950: '#030712',
+                        },
+                        brand: {
+                            400: '#38bdf8',
+                            500: '#0284c7',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'glow': 'glow 2.5s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        glow: {
+                            '0%': { boxShadow: '0 0 15px rgba(56, 189, 248, 0.2)' },
+                            '100%': { boxShadow: '0 0 30px rgba(56, 189, 248, 0.6)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030712;
+            color: #f8fafc;
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(30, 58, 138, 0.3);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(30, 58, 138, 0.3);
+        }
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.15);
+        }
+        .cyan-gradient-text {
+            background: linear-gradient(135deg, #e0f2fe 0%, #38bdf8 50%, #2563eb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030712;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
 </head>
-<body>
+<body class="min-h-screen flex flex-col justify-between selection:bg-sky-500 selection:text-slate-950">
 
-  <div class="container">
-    <!-- Thanh menu -->
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-    </nav>
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
-    <!-- Header profile -->
-    <div class="profile-header">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260726aaf93bd474644a756108ac0cc69e81a6.jpg" alt="Header Banner" class="header-banner">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607261c8d6960ceb42bfd8c12dcca8ec28928.jpg" alt="Michael Ryan Avatar" class="avatar">
-      <h1>Michael Ryan</h1>
-      <p><i>Content Creator</i></p>
-    </div>
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 w-full glass-panel border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo & Brand (Links to Home https://michaelryan03.github.io/) -->
+                <a href="https://michaelryan03.github.io/" class="flex items-center gap-3.5 group">
+                    <div class="relative">
+                        <img src="https://sf-static.upanhlaylink.com/img/image_2026100959b871c14827a471570188c38fe7108c.jpg" 
+                             alt="Michael Ryan" 
+                             class="w-11 h-11 rounded-full object-cover border-2 border-sky-400 group-hover:scale-105 transition-transform duration-300 shadow-lg shadow-sky-500/20">
+                        <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-slate-950 rounded-full"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-lg font-bold tracking-tight text-white group-hover:text-sky-400 transition-colors">Michael Ryan</span>
+                        <span class="text-xs text-slate-400 flex items-center gap-1">
+                            <i class="fa-solid fa-circle-check text-sky-400 text-[10px]"></i> Blog Cá Nhân & Tra Cứu XSMN
+                        </span>
+                    </div>
+                </a>
 
-    <hr>
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-2 bg-slate-900/80 p-1.5 rounded-full border border-slate-800">
+                    <a href="https://michaelryan03.github.io/" class="px-5 py-2 text-sm font-semibold text-white bg-blue-600 rounded-full shadow-md shadow-blue-600/30">Trang chủ</a>
+                </nav>
 
-    <!-- Giới thiệu (About Me) -->
-    <section class="about-section">
-      <h3>📌 Về tôi (About Me)</h3>
-      <p>Chào bạn, tôi là <strong>Michael Ryan</strong>. </p>
-      <br>
-      <p>Đối với thông tin xổ số kiến thiết, việc so sánh kết quả của các kỳ quay thưởng trước đó của cùng một đài là nhu cầu thực tế của nhiều người xem. Đồng hành cùng <strong>Xổ Số Đại Phát</strong>, tôi xin hướng dẫn bạn cách sử dụng tính năng so sánh liên kỳ một cách nhanh chóng và chính xác.</p>
-
-      <h3 style="margin-top:20px;">🔄 Quy trình so sánh kết quả các kỳ quay thưởng cùng đài</h3>
-      <p>Xổ Số Đại Phát cung cấp một giao diện chuyên biệt cho phép hiển thị song song kết quả của các tuần trước đó trên cùng một màn hình để người dùng tiện theo dõi:</p>
-      <ol>
-        <li><strong>Bước 1:</strong> Chọn đài cần tra cứu từ menu chính <em>(ví dụ: Xổ số Vĩnh Long)</em>.</li>
-        <li><strong>Bước 2:</strong> Nhấp chọn mục <strong>"Kết quả các kỳ trước"</strong>. Hệ thống sẽ mặc định hiển thị bảng kết quả của tuần này, tuần trước và hai tuần trước đó theo dạng các hàng ngang song song.</li>
-        <li><strong>Bước 3:</strong> Sử dụng bộ lọc để chọn hiển thị chi tiết giải đặc biệt hoặc toàn bộ các giải từ giải tám đến giải nhất của các kỳ quay đó để thực hiện việc đối chiếu chéo thông tin.</li>
-      </ol>
-
-      <h3>📈 Lợi ích của việc lưu trữ dữ liệu có hệ thống</h3>
-      <p>Tính năng này giúp người dùng dễ dàng kiểm tra xem chuỗi số trúng thưởng có sự trùng lặp nào không, hoặc đơn giản là xem lại lịch sử trúng thưởng của các kỳ trước một cách trực quan mà không cần phải mở nhiều tab trình duyệt khác nhau.</p>
-      
-      <blockquote>
-        💡 <strong>Cam kết trải nghiệm:</strong> Xổ Số Đại Phát tối ưu hóa tốc độ tải trang cho mục này, đảm bảo dữ liệu hiển thị mượt mà, chính thống và không chứa bất kỳ nội dung quảng cáo tiêu cực nào.
-      </blockquote>
-    </section>
-
-    <!-- Danh sách bài viết nổi bật (Featured Posts) -->
-    <section>
-      <h2>🔥 Bài viết nổi bật (Featured)</h2>
-      <div class="post-grid">
-        
-        <!-- Post 1 -->
-        <div class="post-card">
-          <img src="https://via.placeholder.com/640x360" alt="Thumb" class="thumb-16-9">
-          <div class="post-content">
-            <h3 class="post-title"><a href="posts/bai-viet-1.html">Hướng dẫn dò KQXSMN</a></h3>
-            <p class="meta-description">Cách theo dõi kết quả XSMN chính xác.</p>
-          </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
         </div>
 
-        <!-- Post 2 -->
-        <div class="post-card">
-          <img src="https://via.placeholder.com/640x360" alt="Thumb" class="thumb-16-9">
-          <div class="post-content">
-            <h3 class="post-title"><a href="posts/bai-viet-1.html">Ứng dụng dò kết quả Xổ Số Đại Phát</a></h3>
-            <p class="meta-description">Cách tra cứu và so sánh lịch sử các kỳ quay thưởng tự động nhanh chóng và tối ưu trải nghiệm.</p>
-          </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-slate-950/95 px-4 pt-3 pb-6 space-y-3">
+            <a href="https://michaelryan03.github.io/" class="block px-4 py-2.5 rounded-xl text-base font-semibold text-white bg-blue-600">Trang chủ</a>
         </div>
+    </header>
 
-      </div>
-    </section>
-  </div>
+    <!-- Main Container -->
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12" id="trang-chu">
 
+        <!-- Hero Banner Section -->
+        <section class="relative rounded-3xl overflow-hidden glass-panel border border-slate-800/80 shadow-2xl">
+            <!-- Background Banner Image -->
+            <div class="relative h-64 sm:h-80 md:h-[360px] w-full overflow-hidden">
+                <img src="https://sf-static.upanhlaylink.com/img/image_202610090b1ade2dcc4db84c8906a1cf7f676667.jpg" 
+                     alt="Michael Ryan Banner" 
+                     class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+                <div class="absolute inset-0 bg-blue-950/20 mix-blend-overlay"></div>
+            </div>
+
+            <!-- Profile Info Bar Overlapping -->
+            <div class="relative px-6 pb-8 pt-0 sm:px-10 flex flex-col md:flex-row items-center md:items-end gap-6 -mt-20 sm:-mt-24">
+                
+                <!-- Avatar with Glowing Blue Border -->
+                <div class="relative group flex-shrink-0">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-sky-400 via-blue-600 to-indigo-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse-slow"></div>
+                    <img src="https://sf-static.upanhlaylink.com/img/image_2026100959b871c14827a471570188c38fe7108c.jpg" 
+                         alt="Michael Ryan Avatar" 
+                         class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-slate-950 shadow-2xl">
+                    <span class="absolute bottom-2 right-2 w-6 h-6 bg-emerald-500 border-4 border-slate-950 rounded-full flex items-center justify-center text-[10px] text-white font-bold" title="Trạng thái: Trực tuyến">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                </div>
+
+                <!-- Text Info -->
+                <div class="flex-1 text-center md:text-left space-y-2">
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20 backdrop-blur-md">
+                            <i class="fa-solid fa-pen-nib mr-1"></i> Blogger Cá Nhân
+                        </span>
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 backdrop-blur-md">
+                            <i class="fa-solid fa-clock mr-1"></i> Trực tiếp XSMN 16h10 Thứ 4
+                        </span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+                        Michael Ryan
+                    </h1>
+                    
+                    <p class="text-slate-300 text-sm sm:text-base max-w-2xl font-normal leading-relaxed">
+                        Góc nhỏ trải nghiệm & địa chỉ đồng hành tra cứu kết quả xổ số tại Xổ Số Đại Phát.
+                    </p>
+                </div>
+
+                <!-- Action Link in Hero -->
+                <div class="flex items-center gap-3 w-full md:w-auto justify-center">
+                    <a href="https://michaelryan03.github.io/" class="px-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-xs font-semibold text-slate-200 hover:text-white hover:border-sky-400 transition flex items-center gap-2">
+                        <i class="fa-solid fa-globe text-sky-400"></i>
+                        <span>michaelryan03.github.io</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story & Main Narrative Section -->
+        <section id="about" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Main Story Card (8 Cols) -->
+            <div class="lg:col-span-8 glass-panel rounded-3xl p-6 sm:p-10 border border-slate-800/80 space-y-6 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <!-- Section Header -->
+                <div class="flex items-center gap-3 border-b border-slate-800/80 pb-4">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 text-lg">
+                        <i class="fa-solid fa-coffee"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl sm:text-2xl font-bold text-white">Góc nhỏ tâm sự</h2>
+                        <p class="text-xs text-slate-400">Thói quen chiều Thứ 4 cùng Michael Ryan</p>
+                    </div>
+                </div>
+
+                <!-- Narrative Content Based on Reference Text -->
+                <div class="space-y-5 text-slate-200 text-base sm:text-lg leading-relaxed font-normal">
+                    <p class="first-letter:text-5xl first-letter:font-extrabold first-letter:text-sky-400 first-letter:mr-3 first-letter:float-left first-letter:leading-none">
+                        Chào mọi người nha! Mình đây, rất vui vì anh em đã ghé thăm góc nhỏ cá nhân này của mình.
+                    </p>
+                    
+                    <p>
+                        Chiều Thứ 4 tuần nào cũng vậy, tầm <strong class="text-sky-400 font-semibold">16h10</strong> rảnh rỗi sau giờ làm là mình lại có một thói quen quen thuộc giữ suốt mấy năm nay rồi. Cứ đến đúng khung giờ này là mình lại mở điện thoại lên ngồi chờ xem trực tiếp <strong>XSMN</strong>. Cái cảm giác ngồi canh từng dải số nhảy qua từng giải quay thưởng nó vừa hồi hồi, vừa vui vui kiểu gì ấy, thành ra tuần nào tới giờ đó mà bận việc không mở lên xem là lại thấy thiêu thiếu ngay.
+                    </p>
+
+                    <div class="p-5 rounded-2xl bg-slate-900/90 border-l-4 border-sky-400 my-6 shadow-inner space-y-2">
+                        <p class="text-slate-200 italic font-medium">
+                            "Mấy thời gian đầu tìm chỗ xem cũng cực lắm, chuyển qua chuyển lại mấy trang mà trang thì giật lag, trang thì số hiện chậm rì. Đã vậy nhiều khi bận việc không xem trực tiếp được, tối về muốn ngó lại kết quả xsmn t4 hay mấy đài miền Tây quay cùng khung giờ cũng rắc rối vì nhiều nơi hiển thị rối mắt cực kỳ."
+                        </p>
+                    </div>
+
+                    <p>
+                        Sau này may mắn biết đến <strong class="text-white font-bold underline decoration-sky-500 underline-offset-4">Xổ số Đại Phát</strong> thì mình mê luôn tới giờ. Dò trên Đại Phát thích nhất ở chỗ là cập nhật siêu nhanh và chuẩn đét luôn. Hội đồng quay tới đâu là kết quả hiện lên ngay tới đó theo thời gian thực, không bị trễ một giây nào.
+                    </p>
+
+                    <p>
+                        Giao diện bên Đại Phát cũng trình bày rất sạch sẽ, con số to rõ dễ nhìn nên xem trên điện thoại hay máy tính gì cũng mượt mà, tiện lợi lắm. Chiều Thứ 4 tầm 16h10 rảnh rỗi, anh em cứ ghé Xổ số Đại Phát hóng kết quả trực tiếp cùng mình cho xôm nhé!
+                    </p>
+                </div>
+
+                <!-- Interactive Author Signature -->
+                <div class="pt-6 border-t border-slate-800/80 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <img src="https://sf-static.upanhlaylink.com/img/image_2026100959b871c14827a471570188c38fe7108c.jpg" alt="Michael Ryan" class="w-10 h-10 rounded-full border border-sky-400/50">
+                        <div>
+                            <span class="block text-sm font-bold text-white">Michael Ryan</span>
+                            <span class="block text-xs text-slate-400">Tác giả Blog</span>
+                        </div>
+                    </div>
+                    <button id="like-btn" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-sky-400 hover:border-sky-500/40 transition text-sm">
+                        <i class="fa-regular fa-heart text-sky-400"></i>
+                        <span id="like-count">188</span> Thích
+                    </button>
+                </div>
+            </div>
+
+            <!-- Widget Column (4 Cols) -->
+            <div class="lg:col-span-4 space-y-6">
+                
+                <!-- Live Countdown Card for Wednesday 16:10 -->
+                <div class="glass-panel rounded-3xl p-6 border border-slate-800/80 relative overflow-hidden space-y-6">
+                    <div class="flex items-center justify-between">
+                        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                            KHUNG GIỜ QUAY THƯỞNG TRỰC TIẾP
+                        </span>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-1">Trực Tiếp XSMN</h3>
+                        <p class="text-xs text-slate-400">Đài Miền Nam</p>
+                    </div>
+
+                    <!-- Highlighted Time Box -->
+                    <div class="p-4 rounded-2xl bg-gradient-to-br from-blue-950/50 to-slate-900 border border-sky-500/30 text-center space-y-1">
+                        <span class="text-xs uppercase tracking-wider text-sky-300 font-semibold">Khung giờ mở thưởng</span>
+                        <div class="text-3xl font-black text-sky-400 tracking-tight cyan-gradient-text">
+                            16:10 - 16:40
+                        </div>
+                        <p class="text-[11px] text-slate-400">Cập nhật thời gian thực từng con số</p>
+                    </div>
+
+                    <!-- Dynamic Countdown Clock to Next Wednesday 16:10 -->
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between text-xs text-slate-400">
+                            <span>Đếm ngược đến kỳ quay T4 tiếp theo:</span>
+                        </div>
+                        <div class="grid grid-cols-4 gap-2 text-center" id="countdown-timer">
+                            <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
+                                <span class="block text-lg font-bold text-white" id="cd-days">00</span>
+                                <span class="text-[10px] text-slate-500">Ngày</span>
+                            </div>
+                            <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
+                                <span class="block text-lg font-bold text-white" id="cd-hours">00</span>
+                                <span class="text-[10px] text-slate-500">Giờ</span>
+                            </div>
+                            <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
+                                <span class="block text-lg font-bold text-white" id="cd-mins">00</span>
+                                <span class="text-[10px] text-slate-500">Phút</span>
+                            </div>
+                            <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
+                                <span class="block text-lg font-bold text-sky-400" id="cd-secs">00</span>
+                                <span class="text-[10px] text-slate-500">Giây</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Info Box -->
+                    <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs text-slate-300 space-y-2">
+                        <div class="flex items-center gap-2 text-sky-400 font-semibold">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Ưu điểm Xổ số Đại Phát</span>
+                        </div>
+                        <ul class="list-disc list-inside space-y-1 text-slate-400">
+                            <li>Cập nhật siêu tốc không trễ 1 giây</li>
+                            <li>Giao diện con số to rõ, dễ xem</li>
+                            <li>Tối ưu hoàn hảo trên điện thoại</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Blog Section -->
+        <section id="bai-viet" class="space-y-6">
+            
+            <div class="flex items-center justify-between border-b border-slate-800/80 pb-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-white flex items-center gap-2.5">
+                        <i class="fa-solid fa-newspaper text-sky-400 text-xl"></i>
+                        <span>Bài Viết Nổi Bật</span>
+                    </h2>
+                    <p class="text-xs text-slate-400 mt-1">Góc chia sẻ kinh nghiệm theo dõi KQXS của Michael Ryan</p>
+                </div>
+            </div>
+
+            <!-- Feature Blog Card (Thumb 16:9) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 glass-card rounded-3xl overflow-hidden border border-slate-800/80 hover:border-sky-500/40 transition-all duration-300 p-2">
+                
+                <!-- 16:9 Thumbnail -->
+                <div class="lg:col-span-6 relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-900">
+                    <img src="https://sf-static.upanhlaylink.com/img/image_20260819b5c94bd646031bba3f06aca54abbdea4.jpg" 
+                         alt="Xem trực tiếp XSMN Thứ 4 lúc 16h10 trên Xổ số Đại Phát" 
+                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 px-3 py-1 rounded-lg bg-blue-600 text-white text-xs font-bold shadow-lg">
+                        Feature Blog
+                    </span>
+                </div>
+
+                <!-- Content -->
+                <div class="lg:col-span-6 p-4 sm:p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3 text-xs text-slate-400">
+                            <span class="text-sky-400 font-semibold flex items-center gap-1">
+                                <i class="fa-solid fa-tag"></i> XSMN Thứ 4
+                            </span>
+                            <span>•</span>
+                            <span>16:10 Chiều Thứ 4</span>
+                        </div>
+
+                        <h3 class="text-xl sm:text-2xl font-bold text-white hover:text-sky-400 transition-colors leading-snug">
+                            Trải Nghiệm Xem Trực Tiếp XSMN Thứ 4 Chuẩn Xác & Mượt Mà Tại Xổ Số Đại Phát
+                        </h3>
+
+                        <p class="text-sm text-slate-300 leading-relaxed line-clamp-4">
+                            Chiều Thứ 4 lúc 16h10 luôn là khung giờ quen thuộc để ngồi canh từng dãy số XSMN nhảy qua từng giải. Trải qua nhiều trang giật lag, lựa chọn Xổ số Đại Phát mang lại trải nghiệm tuyệt vời với tốc độ hiển thị theo thời gian thực và giao diện siêu sạch sẽ.
+                        </p>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
+                        <div class="flex items-center gap-2">
+                            <img src="https://sf-static.upanhlaylink.com/img/image_2026100959b871c14827a471570188c38fe7108c.jpg" alt="Michael Ryan" class="w-7 h-7 rounded-full border border-sky-400">
+                            <span class="text-slate-300 font-medium">Michael Ryan</span>
+                        </div>
+                        <span class="text-sky-400 font-semibold inline-flex items-center gap-1">
+                            Bài viết độc quyền <i class="fa-solid fa-check text-[10px]"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="border-t border-slate-800/80 bg-slate-950/90 py-10 text-slate-400 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            
+            <div class="flex flex-col items-center md:items-start gap-1">
+                <p class="text-sm font-semibold text-white">Michael Ryan Blog</p>
+                <p class="text-xs text-slate-500">&copy; 2026 Michael Ryan. All rights reserved.</p>
+            </div>
+
+            <!-- Social & Domain Favicon Links -->
+            <div class="flex flex-wrap justify-center items-center gap-2.5">
+                <a href="https://michaelryan-03.netlify.app/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800 transition" title="Netlify">
+                    <img src="https://www.google.com/s2/favicons?domain=netlify.com&sz=64" alt="Netlify" class="w-4 h-4">
+                </a>
+                <a href="https://michaelryan.codeberg.page/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800 transition" title="Codeberg">
+                    <img src="https://www.google.com/s2/favicons?domain=codeberg.org&sz=64" alt="Codeberg" class="w-4 h-4">
+                </a>
+                <a href="https://michaelryan03.framer.website/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800 transition" title="Framer">
+                    <img src="https://www.google.com/s2/favicons?domain=framer.com&sz=64" alt="Framer" class="w-4 h-4">
+                </a>
+                <a href="https://www.pinterest.com/michaelryan03" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800 transition" title="Pinterest">
+                    <img src="https://www.google.com/s2/favicons?domain=pinterest.com&sz=64" alt="Pinterest" class="w-4 h-4">
+                </a>
+                <a href="https://michaelryan.michaelryan03.workers.dev/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800 transition" title="Cloudflare Workers">
+                    <img src="https://www.google.com/s2/favicons?domain=workers.cloudflare.com&sz=64" alt="Cloudflare Workers" class="w-4 h-4">
+                </a>
+                <a href="https://michaelryan.pages.dev/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800 transition" title="Cloudflare Pages">
+                    <img src="https://www.google.com/s2/favicons?domain=workers.cloudflare.com&sz=64" alt="Cloudflare Pages" class="w-4 h-4">
+                </a>
+                <a href="https://gitlab.com/michaelryan03" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800 transition" title="GitLab">
+                    <img src="https://www.google.com/s2/favicons?domain=gitlab.com&sz=64" alt="GitLab" class="w-4 h-4">
+                </a>
+                <a href="https://michael-ryan03.onrender.com/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800 transition" title="Render">
+                    <img src="https://www.google.com/s2/favicons?domain=render.com&sz=64" alt="Render" class="w-4 h-4">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Toast Notification Helper
+            function showToast(message) {
+                const container = document.getElementById('toast-container');
+                if (!container) return;
+
+                const toast = document.createElement('div');
+                toast.className = 'pointer-events-auto px-4 py-3 rounded-xl shadow-2xl text-xs font-semibold flex items-center gap-2 border transition-all duration-300 transform translate-y-2 opacity-0 bg-slate-900 text-sky-400 border-sky-500/40';
+                
+                toast.innerHTML = `
+                    <i class="fa-solid fa-circle-check text-sky-400"></i>
+                    <span>${message}</span>
+                `;
+
+                container.appendChild(toast);
+
+                setTimeout(() => {
+                    toast.classList.remove('translate-y-2', 'opacity-0');
+                }, 10);
+
+                setTimeout(() => {
+                    toast.classList.add('translate-y-2', 'opacity-0');
+                    setTimeout(() => toast.remove(), 300);
+                }, 3000);
+            }
+
+            // Interactive Like Button
+            const likeBtn = document.getElementById('like-btn');
+            const likeCountEl = document.getElementById('like-count');
+            let liked = false;
+            let count = 188;
+
+            if (likeBtn && likeCountEl) {
+                likeBtn.addEventListener('click', () => {
+                    if (!liked) {
+                        count++;
+                        liked = true;
+                        likeBtn.classList.add('text-sky-400', 'border-sky-500/50', 'bg-sky-500/10');
+                        likeBtn.querySelector('i').classList.replace('fa-regular', 'fa-solid');
+                        showToast('Cảm ơn bạn đã yêu thích bài viết của Michael Ryan!');
+                    } else {
+                        count--;
+                        liked = false;
+                        likeBtn.classList.remove('text-sky-400', 'border-sky-500/50', 'bg-sky-500/10');
+                        likeBtn.querySelector('i').classList.replace('fa-solid', 'fa-regular');
+                    }
+                    likeCountEl.textContent = count;
+                });
+            }
+
+            // Dynamic Countdown to Next Wednesday 16:10
+            function updateCountdown() {
+                const now = new Date();
+                let target = new Date();
+                
+                const dayOfWeek = now.getDay(); // 0 = Sun, 1 = Mon, 3 = Wed
+                let daysUntilWednesday = (3 - dayOfWeek + 7) % 7;
+                
+                if (dayOfWeek === 3) {
+                    const currentMinutes = now.getHours() * 60 + now.getMinutes();
+                    if (currentMinutes >= 16 * 60 + 10) {
+                        daysUntilWednesday = 7;
+                    }
+                } else if (daysUntilWednesday === 0) {
+                    daysUntilWednesday = 7;
+                }
+
+                target.setDate(now.getDate() + daysUntilWednesday);
+                target.setHours(16, 10, 0, 0);
+
+                const diff = target - now;
+
+                if (diff <= 0) {
+                    document.getElementById('cd-days').textContent = "00";
+                    document.getElementById('cd-hours').textContent = "00";
+                    document.getElementById('cd-mins').textContent = "00";
+                    document.getElementById('cd-secs').textContent = "00";
+                    return;
+                }
+
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                const mins = Math.floor((diff / 1000 / 60) % 60);
+                const secs = Math.floor((diff / 1000) % 60);
+
+                document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+                document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+                document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+            }
+
+            setInterval(updateCountdown, 1000);
+            updateCountdown();
+        });
+    </script>
 </body>
 </html>
