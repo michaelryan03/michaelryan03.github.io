@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Trang chủ -->
   <url>
-    <loc>https://michaelryan03.github.io/Home/</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <loc>https://michaelryan03.github.io/blog.html</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
-
-  <!-- Trang danh mục Blog / Tin tức -->
   <url>
-    <loc>https://michaelryan03.github.io/Home/blog/index.html</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://michaelryan03.github.io/don-xem-ket-qua-xo-so-mien-trung-nhanh-moi-nhat.html</loc>
+    <lastmod>2026-10-23</lastmod>
   </url>
-
+  <url>
+    <loc>https://michaelryan03.github.io/googlef21b73e69f7b87dd.html</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://michaelryan03.github.io/</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
 </urlset>
